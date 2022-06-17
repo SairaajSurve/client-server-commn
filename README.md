@@ -23,3 +23,15 @@ Content-type: 'text/event-stream'
 Transfer-Encoding: 'chunked'  
 
 Server keeps sending more stuff
+
+## Polling
+
+We ask the backend if it can the provide the service we need. Then the backend sends a response . This process is repeated regularly. Stateless.
+
+## Pushing
+
+The backend pushes a response to the client when it wants to. Statefull.
+
+## Long Polling
+
+We ask the backend if it can the provide the service we need. Then the backend sends a response if it can provide the service else it will wait until the service is ready. This process is repeated regularly. Stateless.
